@@ -1,101 +1,223 @@
-<<<<<<< HEAD
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+<h1 align="center">🚀 React Native Course 🚀</h1>
 
-# Getting Started
+<p align="center">
+  <strong>Dive deep into the world of React Native and build production-ready mobile applications!</strong>
+</p>
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+<p align="center">
+  <img src="https://img.shields.io/badge/React%20Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
+  <img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white" alt="Redux" />
+</p>
 
-## Step 1: Start Metro
+<p align="center">
+  <a href="https://www.figma.com/board/lFCD8K9TEzpK8Z6K84dJaf/React-Native-Course?node-id=0-1&t=Lz1frJuD2IU1heo6-1">
+    <strong>✨ View Detailed Course Content on FigJam ✨</strong>
+  </a>
+</p>
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+---
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## 📚 Course Modules
 
-```sh
-# Using npm
-npm start
+### 🟢 Module 0: Introduction & Setup
+_Laying the groundwork for your React Native journey._
 
-# OR using Yarn
-yarn start
-```
+* **What is React Native?**
+    * Native vs Hybrid vs React Native
+* **CLI vs Expo:** Pros & Cons
+* **Development Environment Setup:**
+    * Android Studio + Emulator Setup
+    * React Native CLI installation (latest)
+* **Project Initialization:**
+    * Folder structure & VS Code extensions
+    * First App: “Hello React Native”
 
-## Step 2: Build and run your app
+---
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+### 🟢 Module 1: React Core (Super Strong Base)
+✨ _React samjhe bina React Native nahi aayega_ ✨
 
-### Android
+* **JSX & Rendering Logic:**
+    * JSX vs HTML
+    * Using JavaScript expressions in JSX
+    * Fragments, self-closing tags, and nesting logic
+* **Components:**
+    * Functional Components
+    * Props (passing data)
+    * Children & Component Composition
+* **State & Event Handling:**
+    * `useState` deeply
+    * Handling events (`onPress`, `onChange`)
+    * Immutable updates for state
+* **Conditional Rendering:**
+    * If-else statements, logical `&&` operator, and ternary operators
+    * Strategies for showing and hiding components
+* **List Rendering:**
+    * Using `map()` with unique keys
+    * `FlatList` vs `ScrollView`
+    * `SectionList` (in-depth exploration)
 
-```sh
-# Using npm
-npm run android
+---
 
-# OR using Yarn
-yarn android
-```
+### 🟢 Module 2: React Native Fundamentals
+_Mastering the building blocks of React Native applications._
 
-### iOS
+* **Core Components Deep Dive:**
+    * `View`, `Text`, `Image`, `Button`
+    * `TextInput`, `ScrollView`, `SafeAreaView`
+    * Comparing `TouchableOpacity`, `Pressable`, and `Button`
+    * `StatusBar` customization
+* **Styling & Layout with Flexbox:**
+    * In-depth Flexbox: `flexDirection` (row/column), alignments (`justifyContent`, `alignItems`)
+    * Understanding `Dimensions`, `PixelRatio`, and responsive units
+    * Percentage-based layouts and screen height/width detection
+    * Creating reusable `StyleSheets`
+    * Implementing Dark Mode with the `Appearance` API
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+---
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+### 🟢 Module 3: Navigation Mastery
+_Building industry-level navigation architecture for your apps._
 
-```sh
-bundle install
-```
+* **React Navigation Setup:**
+    * **Stack Navigator** (deep dive): Managing a stack of screens
+    * **Tab Navigator**: Implementing tab-based navigation with icons and styling
+    * **Drawer Navigator**: Creating slide-in drawer navigation
+    * Customizing headers and screen options
+* **Common Navigation Patterns:**
+    * Passing parameters between screens
+    * Navigating back and resetting the navigation stack
+    * Implementing nested navigators (e.g., Tab Navigator within a Stack Navigator, Stack Navigator within a Drawer Navigator)
 
-Then, and every time you update your native dependencies, run:
+---
 
-```sh
-bundle exec pod install
-```
+### 🟢 Module 4: State Management (Basic to Advanced)
+_Effectively managing data flow and application state._
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+* **`useState` vs `useReducer`:**
+    * When to use each hook
+    * Managing complex state logic with `useReducer`
+* **Context API (Global State Management):**
+    * Creating context and providers
+    * Passing data app-wide without prop drilling
+    * Accessing context in deeply nested components
+* **Redux Toolkit (Professional Level State Management):**
+    * Core concepts: Store, Slices, Reducers, Actions
+    * Handling asynchronous operations (e.g., API calls) with `AsyncThunk`
+    * Integrating with Redux DevTools for easier debugging
 
-```sh
-# Using npm
-npm run ios
+---
 
-# OR using Yarn
-yarn ios
-```
+### 🟢 Module 5: Firebase Full Integration
+_Powering your apps with backend services from Firebase._
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+* **Firebase Authentication:**
+    * Implementing user signup and login with email/password
+    * Effective error handling strategies
+    * Persisting login state using `AsyncStorage`
+* **Firestore Database (NoSQL):**
+    * CRUD operations (Create, Read, Update, Delete) in depth
+    * Implementing real-time listeners for live data updates
+    * Understanding collections vs documents logic
+* **Firebase Storage:**
+    * Integrating image picker and uploading images
+    * Displaying uploaded images in your app
+    * Implementing file size and type validation
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+---
 
-## Step 3: Modify your app
+### 🟢 Module 6: APIs & Data Fetching
+_Connecting your app to the world with external data sources._
 
-Now that you have successfully run the app, let's make changes!
+* **`Workspace` API vs `Axios`:**
+    * Making GET, POST, PUT, DELETE requests with practical examples
+    * Managing loading and error states during API calls
+    * Implementing pagination for large datasets
+* **Working with Popular APIs (Examples):**
+    * Weather API
+    * News API
+    * TMDB Movie API
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+---
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+### 🟢 Module 7: Advanced React Native
+_Elevating your skills with advanced concepts and techniques._
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+* **Hooks Deep Dive:**
+    * `useEffect`: Managing side effects, cleanup logic, and dependency array optimization
+    * **Custom Hooks** (deepest level): Creating reusable stateful logic
+    * `useRef` for accessing DOM elements, managing animations, and timers
+    * `useMemo` & `useCallback` for performance optimization
+* **Animations:**
+    * `LayoutAnimation` for simple animated transitions
+    * `Animated` API for fine-grained control over animations (opacity, scale, translateY)
+    * Handling gestures for interactive animations
+* **File Handling:**
+    * Picking images from the device gallery
+    * Uploading PDF files
+    * Reading files using libraries like `react-native-fs` (RNFS)
+* **Offline Support:**
+    * Leveraging `AsyncStorage` for persistent data storage
+    * Implementing data caching logic for offline access
+    * Checking network connectivity with `NetInfo`
 
-## Congratulations! :tada:
+---
 
-You've successfully run and modified your React Native App. :partying_face:
+### 🟢 Module 8: App Architecture & Best Practices
+_Building scalable, maintainable, and robust applications._
 
-### Now what?
+* **Folder Structuring Patterns:**
+    * Implementing feature-based modular architecture
+    * Organizing reusable UI components
+    * Creating dedicated folders for services, helpers, and constants
+* **Clean Code Practices:**
+    * Using linters (e.g., ESLint) for code consistency and error prevention
+    * Adhering to naming conventions and code formatting standards
+    * Applying DRY (Don't Repeat Yourself) principles and creating reusable components
+* **Debugging & Testing:**
+    * Setting up Flipper for advanced debugging
+    * Effective use of debug logs
+    * Introduction to Jest basics for component testing
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+---
 
-# Troubleshooting
+### 🟢 Module 9: Real Projects (with Code Breakdown)
+_Apply your knowledge by building complete applications._
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+* **Motivational App:** Daily quotes + Authentication + Firebase Integration
+* **E-Commerce UI:** Product cards + Shopping Cart + Filtering Logic
+* **Chat App:** Real-time messaging with Firebase's chat collection
+* **Movie App:** API integration (e.g., TMDB) + Search functionality + Bookmarking features
+* **Notes App:** Feature-rich notes application with dark mode and offline capabilities
 
-# Learn More
+---
 
-To learn more about React Native, take a look at the following resources:
+### 🟢 Module 10: Deployment
+_Getting your app ready for the world!_
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
-=======
-# React-Native-Course
->>>>>>> 52989f7e3fb752c16745565d4da21bd1dda748bf
+* **Android Deployment:**
+    * Building an APK (Android Package Kit) for Android devices
+    * Setting up app icons and splash screens
+    * Understanding Play Store requirements and submission process
+* **Distribution & Testing:**
+    * Using Firebase App Distribution for internal testing and feedback
+    * Other internal testing strategies
+
+---
+
+## 📦 Bonus Modules
+_Extra resources to boost your career._
+
+* **Git & GitHub:** Version control essentials for collaborative development
+* **Interview Questions:** React Native-specific questions to prepare you for job interviews
+* **Freelance Project Proposal Templates:** Get a head start on your freelance career
+* **Resume Writing Tips + Portfolio Design:** Crafting a compelling profile
+* **Integrating Third-Party Libraries:** Examples like Date Picker, Modal, Rating components, etc.
+
+---
+
+<p align="center">
+  Happy Coding! 🎉
+</p>
